@@ -1,11 +1,12 @@
 import React, {Component} from 'react';
 import Table from "./table";
+import {Link} from "react-router-dom";
 
 class Gateways extends Component {
 
     render() {
         let labels=[
-            {path: "_id", label:"ID Serial Number"},
+            {path: "_id", label:"ID Serial Number",content: gateway=><Link to={`/gateways/${gateway._id}`}>{gateway._id}</Link>},
             {path:"name", label:"Name"},
             {path:"ipaddress", label:"IP Address"},
             {path:"peripheralDevices", label:"Devices Connected"}
@@ -17,7 +18,8 @@ class Gateways extends Component {
             {_id:4, name:"Eduardo", ipaddress:"10.8.56.15", peripheralDevices:3},
         ]
         return (
-            <div>
+            <div >
+                <Link to="/gateways/new" className="btn btn-primary" style={{marginBottom:20, marginTop:20}}> New Gateway </Link>
                 <Table columns={labels} data={gateways} />
             </div>
         );
