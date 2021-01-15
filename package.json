@@ -12,6 +12,7 @@
     "lodash": "^4.17.20",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
+    "react-ajax": "^0.1.1",
     "react-axios": "^2.0.4",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",

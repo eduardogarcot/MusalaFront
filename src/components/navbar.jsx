@@ -4,7 +4,7 @@ import {NavLink} from "react-router-dom";
 function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <NavLink className="navbar-brand" to="/">Practical Task</NavLink>
+            <p className="navbar-brand">Practical Task</p>
             <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav">
                     <li className="nav-item">

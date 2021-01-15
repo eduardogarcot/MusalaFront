@@ -1,6 +1,6 @@
 import React from 'react';
 import Joi from 'joi-browser';
-import Form from "./form";
+import Form from "./Forms/form";
 
 class PeripheralDevicesForm extends Form {
     state = {

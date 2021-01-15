@@ -1,6 +1,6 @@
 import React from 'react';
 import Joi from "joi-browser";
-import Form from "./form";
+import Form from "./Forms/form";
 
 class GatewayForm extends Form {
     state = {
@@ -15,6 +15,7 @@ class GatewayForm extends Form {
     schema= {
         _id: Joi.number()
             .required()
+            .min(1)
             .label("ID Serial Number"),
         name: Joi.string()
             .required()
