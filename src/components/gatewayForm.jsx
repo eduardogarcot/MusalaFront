@@ -1,6 +1,7 @@
 import React from 'react';
 import Joi from "joi-browser";
 import Form from "./Forms/form";
+import axios from "axios";
 
 class GatewayForm extends Form {
     state = {
@@ -30,22 +31,26 @@ class GatewayForm extends Form {
             .label("Devices Connected")
     };
 
-    componentDidMount(){
+    async componentDidMount(){
         const gatewayID = this.props.match.params.id;
         if (gatewayID === "new") return;
 
-        const gateway = {_id:10, name:"Felipe", ipAddress:"10.8.91.145", devicesList:5};
-        this.setState({data:this.mapToViewModel(gateway)})
+        const headers = {
+            "Content-Type": "application/json"
+        };
+        const endpoint = "https://localhost:5001/api/gateways/"+gatewayID.toString();
+        const {data} = await axios.get(endpoint,{headers})
+            .catch(err=>console.log(err)) ;
+        this.setState({data:this.mapToViewModel(data)})
     };
 
-    mapToViewModel=(movie)=>{
+    mapToViewModel=(gateway)=>{
         return {
-            _id:movie._id,
-            name:movie.name,
-            ipAddress:movie.ipAddress,
-            devicesList:movie.devicesList,
-        };
-    };
+            _id: gateway.serialNumberId,
+            name: gateway.name,
+            ipAddress: gateway.ipAddress,
+            devicesList: gateway.devicesList.length,
+        }};
 
     doSubmit = ()=>{
         this.props.history.push("/gateways")
