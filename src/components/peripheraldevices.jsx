@@ -38,6 +38,7 @@ class PeripheralDevices extends Component {
             {path:"serialNumberId", label:"Gateway ID"}
         ];
         let peripheralDevicesList= this.state.peripheralDevices.map(pd=>this.mapToViewModel(pd));
+        if (peripheralDevicesList.length===0) return <h1>There is no register of peripheral devices</h1>;
         return (
             <div>
                 <Link to="/peripheraldevices/new" className="btn btn-primary" style={{marginBottom:20, marginTop:20}}> New Peripheral Device </Link>

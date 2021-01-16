@@ -15,7 +15,7 @@ class Gateways extends Component {
         const {data} = await axios.get("https://localhost:5001/api/gateways",{headers})
             .catch(err=>console.log(err)) ;
         this.setState({gateways:data});
-    };
+        };
 
     mapToViewModel=(gateway)=>{
         return {
@@ -33,6 +33,8 @@ class Gateways extends Component {
             {path:"devicesList", label:"Devices Connected"}
         ];
         let gatewaysList= this.state.gateways.map(gateway=>this.mapToViewModel(gateway));
+        if (gatewaysList.length===0) return <h1>There is no register of gateways</h1>;
+
         return (
             <div >
                 <Link to="/gateways/new" className="btn btn-primary" style={{marginBottom:20, marginTop:20}}> New Gateway </Link>
