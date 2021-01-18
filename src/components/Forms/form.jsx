@@ -11,14 +11,17 @@ class Form extends Component {
   };
 
   validate = () => {
+    console.log("11111");
     const options = { abortEarly: false };
     const { error } = Joi.validate(this.state.data, this.schema, options);
+    console.log("Error", error);
     if (!error) return null;
 
     const errors = {};
     for (let item of error.details) {
       errors[item.path[0]] = item.message;
     }
+
     return errors;
   };
 
@@ -35,7 +38,6 @@ class Form extends Component {
     const errors = this.validate();
     this.setState({ errors: errors || {} });
     if (errors) return;
-
     this.doSubmit();
   };
 

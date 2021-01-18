@@ -38,7 +38,11 @@ class PeripheralDevices extends Component {
             {path:"serialNumberId", label:"Gateway ID"}
         ];
         let peripheralDevicesList= this.state.peripheralDevices.map(pd=>this.mapToViewModel(pd));
-        if (peripheralDevicesList.length===0) return <h1>There is no register of peripheral devices</h1>;
+        if (peripheralDevicesList.length===0)
+            return <React.Fragment>
+                <h1>There is no register of Peripheral Devices</h1>
+                <Link to="/peripheraldevices/new" className="btn btn-primary" style={{marginBottom:20, marginTop:20}}> New Peripheral Device </Link>
+            </React.Fragment>;
         return (
             <div>
                 <Link to="/peripheraldevices/new" className="btn btn-primary" style={{marginBottom:20, marginTop:20}}> New Peripheral Device </Link>

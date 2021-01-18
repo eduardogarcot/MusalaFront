@@ -7,6 +7,8 @@ import Gateways from "./components/gateways";
 import NotFound from "./components/notFound";
 import GatewayForm from "./components/gatewayForm";
 import PeripheralDevicesForm from "./components/peripheralDevicesForm";
+import {ToastContainer} from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 class App extends Component {
   state = {
@@ -16,6 +18,7 @@ class App extends Component {
   render() {
     return (
         <React.Fragment>
+          <ToastContainer/>
           <Navbar/>
           <main className="container">
             <Switch>

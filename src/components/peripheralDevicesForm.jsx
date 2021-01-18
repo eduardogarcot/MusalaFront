@@ -2,6 +2,7 @@ import React from 'react';
 import Joi from 'joi-browser';
 import Form from "./Forms/form";
 import axios from "axios";
+import {toast} from "react-toastify";
 
 class PeripheralDevicesForm extends Form {
     state = {
@@ -68,7 +69,8 @@ class PeripheralDevicesForm extends Form {
         const headersPost = {"Content-Type": "application/json", "Access-Control-Request-Method":"OPTIONS"};
         const headersPut = {"Content-Type": "application/json", "Access-Control-Request-Method":"OPTIONS"};
         if (id==="new"){ await axios.post("https://localhost:5001/api/peripheraldevices",data)
-            .catch(err=>console.log(err));
+            .catch(err=>toast(err));
+            this.props.history.push("/");
         return;}
         await axios.put(`https://localhost:5001/api/peripheraldevices/${id}`,data)
             .catch(err=>console.log(err));
