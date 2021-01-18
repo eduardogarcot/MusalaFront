@@ -3,6 +3,7 @@ import Table from "./Table/table";
 import {Link} from "react-router-dom";
 import axios from "axios";
 import * as myConstants from "./Services/http";
+
 class PeripheralDevices extends Component {
     state={
         peripheralDevices:[]

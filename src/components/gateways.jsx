@@ -25,8 +25,9 @@ class Gateways extends Component {
         }};
 
     handleDelete = async (id) => {
+        let endpoint = myConstants.ENDPOINTS +"gateways";
         try {
-            await axios.delete(`https://localhost:5001/api/gateways/${id}`,id)
+            await axios.delete(`${endpoint}/${id}`,id)
             }
         catch (error) {
             if (error.response && error.response.status === 404) {
@@ -35,6 +36,7 @@ class Gateways extends Component {
         }
         this.props.history.push("/");
     };
+
     render() {
         let labels=[
             {path: "_id", label:"ID Serial Number",content: gateway=><Link to={`/gateways/${gateway._id}`}>{gateway._id}</Link>},

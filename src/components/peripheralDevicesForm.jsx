@@ -122,6 +122,7 @@ class PeripheralDevicesForm extends Form {
                 return {_id: "gateway"+gateway.serialNumberId, value: gateway.serialNumberId, label: gateway.serialNumberId}
         });
     }
+
     render() {
         const idPD=this.props.match.params.id;
         return (
