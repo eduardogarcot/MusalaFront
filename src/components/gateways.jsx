@@ -3,6 +3,7 @@ import Table from "./Table/table";
 import {Link} from "react-router-dom";
 import axios from "axios";
 import {toast} from "react-toastify";
+import * as myConstants from "./Services/http";
 
 class Gateways extends Component {
     state={
@@ -10,15 +11,10 @@ class Gateways extends Component {
     };
 
     async componentDidMount(){
-        let data = [];
-        try{
-            data = await axios.get("https://localhost:5001/api/gateways");
-        } catch(error){
-            toast.error("Unexpected Error");
-            return;
-        }
+        const endpoint = myConstants.ENDPOINTS + "gateways";
+        let data = await axios.get(endpoint);
         this.setState({gateways:data.data});
-        };
+    };
 
     mapToViewModel=(gateway)=>{
         return {

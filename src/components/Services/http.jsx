@@ -1,6 +1,7 @@
 import axios from "axios";
 import { toast } from "react-toastify";
 
+
 axios.defaults.baseURL = process.env.REACT_APP_API_URL;
 
 axios.interceptors.response.use(null, error => {
@@ -15,6 +16,9 @@ axios.interceptors.response.use(null, error => {
 
     return Promise.reject(error);
 });
+export const ENDPOINTS="https://localhost:5001/api/";
+
+
 
 
 

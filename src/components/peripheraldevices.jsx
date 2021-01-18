@@ -2,21 +2,15 @@ import React, {Component} from 'react';
 import Table from "./Table/table";
 import {Link} from "react-router-dom";
 import axios from "axios";
-import {toast} from "react-toastify";
-
+import * as myConstants from "./Services/http";
 class PeripheralDevices extends Component {
     state={
         peripheralDevices:[]
     };
 
     async componentDidMount(){
-        let data = {};
-        try{
-            data = await axios.get("https://localhost:5001/api/peripheraldevices")
-        } catch (error) {
-            toast.error("Unexpected Error");
-            return;
-        }
+        const endpoint = myConstants.ENDPOINTS + "peripheraldevices";
+        let data = await axios.get(endpoint);
         this.setState({peripheralDevices:data.data});
     };
 

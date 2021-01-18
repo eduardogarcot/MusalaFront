@@ -3,6 +3,7 @@ import Joi from 'joi-browser';
 import Form from "./Forms/form";
 import axios from "axios";
 import {toast} from "react-toastify";
+import * as myConstants from "./Services/http";
 
 class PeripheralDevicesForm extends Form {
     state = {
@@ -36,19 +37,14 @@ class PeripheralDevicesForm extends Form {
 
     async componentDidMount(){
         const pdID = this.props.match.params.id;
-        let gatewaysList = {};
-        try{
-            gatewaysList = await axios.get("https://localhost:5001/api/gateways");
-        } catch(error){
-            toast.error("Unexpected Error");
-            return;
-        }
+        let endpoint = myConstants.ENDPOINTS + "gateways";
+        let gatewaysList = await axios.get(endpoint);
         const list = gatewaysList.data.filter((gateway)=>gateway.devicesList.length<10);
         if (pdID === "new") {
             this.setState({gateways:list});
             return;
         }
-        const endpoint = "https://localhost:5001/api/peripheraldevices/"+pdID.toString();
+        endpoint = myConstants.ENDPOINTS+"peripheraldevices/"+pdID.toString();
         let data = {};
         try {
             data = await axios.get(endpoint)
@@ -59,7 +55,6 @@ class PeripheralDevicesForm extends Form {
                 this.props.history.push("/peripheraldevices");
                 return;
             }
-            toast.error("Unexpected Error");
             this.props.history.push("/peripheraldevices");
             return;
         }
@@ -87,23 +82,23 @@ class PeripheralDevicesForm extends Form {
     doSubmit = async ()=>{
         const {id}=this.props.match.params;
         const data =this.mapToPDModel(this.state.data);
+        let endpoint = myConstants.ENDPOINTS + "peripheraldevices";
         if (id==="new"){
             try {
-                await axios.post("https://localhost:5001/api/peripheraldevices",data)
+                await axios.post(endpoint,data)
             }
             catch (error) {
                 if (error.response && error.response.status === 400) {
                     toast.error("Error: Invalid Gateway ID, Created Date or this Peripheral Device has already exist");
                     return;
                 }
-                toast.error("Unexpected Error");
                 return;
             }
             this.props.history.push("/peripheraldevices");
             return;
         }
         try{
-            await axios.put(`https://localhost:5001/api/peripheraldevices/${id}`,data)
+            await axios.put(`${endpoint}/${id}`,data)
         }
         catch(error){
             if (error.response && error.response.status === 400) {
@@ -115,8 +110,7 @@ class PeripheralDevicesForm extends Form {
                 this.props.history.push("/peripheraldevices");
                 return;
             }
-            toast.error("Unexpected Error");
-            this.props.history.push("/peripheraldevices");
+            return;
         }
         this.props.history.push("/peripheraldevices");
     };
