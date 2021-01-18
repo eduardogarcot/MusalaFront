@@ -13,19 +13,57 @@ class PeripheralDevicesForm extends Form {
             onlineStatus:"",
             serialNumberId:""
         },
-        errors:{}
+        errors:{},
+        gateways:[]
+    };
+
+    schema= {
+        _id: Joi.number()
+            .required()
+            .label("Device Id"),
+        vendor: Joi.string()
+            .required()
+            .label("Vendor"),
+        createdDate: Joi.string()
+            .required()
+            .label("Crated Date"),
+        onlineStatus: Joi.boolean()
+            .label("Is Online"),
+        serialNumberId: Joi.number()
+            .required()
+            .label("Gateway ID")
     };
 
     async componentDidMount(){
         const pdID = this.props.match.params.id;
-        if (pdID === "new") return;
-        const headers = {
-            "Content-Type": "application/json"
-        };
+        let gatewaysList = {};
+        try{
+            gatewaysList = await axios.get("https://localhost:5001/api/gateways");
+        } catch(error){
+            toast.error("Unexpected Error");
+            return;
+        }
+        const list = gatewaysList.data.filter((gateway)=>gateway.devicesList.length<10);
+        if (pdID === "new") {
+            this.setState({gateways:list});
+            return;
+        }
         const endpoint = "https://localhost:5001/api/peripheraldevices/"+pdID.toString();
-        const {data} = await axios.get(endpoint,{headers})
-            .catch(err=>console.log(err)) ;
-        this.setState({data:this.mapToViewModel(data)})
+        let data = {};
+        try {
+            data = await axios.get(endpoint)
+        }catch(error){
+            if (error.response && error.response.status === 404)
+            {
+                toast.error("This Peripheral Device is not exist");
+                this.props.history.push("/peripheraldevices");
+                return;
+            }
+            toast.error("Unexpected Error");
+            this.props.history.push("/peripheraldevices");
+            return;
+        }
+        this.setState({data:this.mapToViewModel(data.data),gateways:list})
     };
 
     mapToViewModel=(pd)=>{
@@ -45,38 +83,51 @@ class PeripheralDevicesForm extends Form {
             onlineStatus: pd.onlineStatus,
             serialNumberId:pd.serialNumberId
         }};
-    
-    schema= {
-        _id: Joi.number()
-            .required()
-            .label("Device Id"),
-        vendor: Joi.string()
-            .required()
-            .label("Vendor"),
-        createdDate: Joi.string()
-            .required()
-            .label("Crated Date"),
-        onlineStatus: Joi.boolean()
-            .label("Is Online"),
-        serialNumberId: Joi.number()
-            .required()
-            .label("Gateway ID")
-    };
 
     doSubmit = async ()=>{
         const {id}=this.props.match.params;
         const data =this.mapToPDModel(this.state.data);
-        const headersPost = {"Content-Type": "application/json", "Access-Control-Request-Method":"OPTIONS"};
-        const headersPut = {"Content-Type": "application/json", "Access-Control-Request-Method":"OPTIONS"};
-        if (id==="new"){ await axios.post("https://localhost:5001/api/peripheraldevices",data)
-            .catch(err=>toast(err));
-            this.props.history.push("/");
-        return;}
-        await axios.put(`https://localhost:5001/api/peripheraldevices/${id}`,data)
-            .catch(err=>console.log(err));
-        this.props.history.push("/");
+        if (id==="new"){
+            try {
+                await axios.post("https://localhost:5001/api/peripheraldevices",data)
+            }
+            catch (error) {
+                if (error.response && error.response.status === 400) {
+                    toast.error("Error: Invalid Gateway ID, Created Date or this Peripheral Device has already exist");
+                    return;
+                }
+                toast.error("Unexpected Error");
+                return;
+            }
+            this.props.history.push("/peripheraldevices");
+            return;
+        }
+        try{
+            await axios.put(`https://localhost:5001/api/peripheraldevices/${id}`,data)
+        }
+        catch(error){
+            if (error.response && error.response.status === 400) {
+                toast.error("Error: Invalid Gateway ID or Created Date");
+                return;
+            }
+            if (error.response && error.response.status === 404) {
+                toast.error("The Peripheral Device is not stored in the database");
+                this.props.history.push("/peripheraldevices");
+                return;
+            }
+            toast.error("Unexpected Error");
+            this.props.history.push("/peripheraldevices");
+        }
+        this.props.history.push("/peripheraldevices");
     };
 
+    getGatewaysID = () =>{
+        const {gateways} = this.state;
+        return gateways.map(gateway => {
+            if (gateway.devicesList.length < 10)
+                return {_id: "gateway"+gateway.serialNumberId, value: gateway.serialNumberId, label: gateway.serialNumberId}
+        });
+    }
     render() {
         const idPD=this.props.match.params.id;
         return (
@@ -87,7 +138,7 @@ class PeripheralDevicesForm extends Form {
                     {this.renderInput("vendor", "Vendor")}
                     {this.renderInput("createdDate", "Created Date")}
                     {this.renderListBox("onlineStatus", "is Online", [{_id:1, value:true, label:"Yes"}, {_id:2, value:false, label:"No"}])}
-                    {this.renderInput("serialNumberId", "Gateway ID", "number")}
+                    {this.renderListBox("serialNumberId", "Gateway ID", this.getGatewaysID())}
                     {this.renderButton('Save')}
                 </form>
             </div>

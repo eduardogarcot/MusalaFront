@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Table from "./Table/table";
 import {Link} from "react-router-dom";
 import axios from "axios";
+import {toast} from "react-toastify";
 
 class PeripheralDevices extends Component {
     state={
@@ -9,12 +10,14 @@ class PeripheralDevices extends Component {
     };
 
     async componentDidMount(){
-        const headers = {
-            "Content-Type": "application/json"
-        };
-        const {data} = await axios.get("https://localhost:5001/api/peripheraldevices",{headers})
-            .catch(err=>console.log(err)) ;
-        this.setState({peripheralDevices:data});
+        let data = {};
+        try{
+            data = await axios.get("https://localhost:5001/api/peripheraldevices")
+        } catch (error) {
+            toast.error("Unexpected Error");
+            return;
+        }
+        this.setState({peripheralDevices:data.data});
     };
 
     mapToViewModel=(pd)=>{

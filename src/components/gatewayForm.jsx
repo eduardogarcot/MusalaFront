@@ -53,7 +53,7 @@ class GatewayForm extends Form {
             this.props.history.push("/gateways");
             return;
         }
-        this.setState({data:this.mapToViewModel({data})})
+        this.setState({data:this.mapToViewModel(data.data)})
     };
 
     mapToViewModel=(gateway)=>{
@@ -81,7 +81,7 @@ class GatewayForm extends Form {
             }
             catch (error) {
                 if (error.response && error.response.status === 400) {
-                    toast.error("Invalid IP Address, invalid Name, or this gateways has already exist");
+                    toast.error("Error: Invalid IP Address, or this gateways has already exist");
                     return;
                 }
                 toast.error("Unexpected Error");

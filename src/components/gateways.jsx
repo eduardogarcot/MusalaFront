@@ -10,9 +10,14 @@ class Gateways extends Component {
     };
 
     async componentDidMount(){
-        const {data} = await axios.get("https://localhost:5001/api/gateways")
-            .catch(err=>console.log(err)) ;
-        this.setState({gateways:data});
+        let data = [];
+        try{
+            data = await axios.get("https://localhost:5001/api/gateways");
+        } catch(error){
+            toast.error("Unexpected Error");
+            return;
+        }
+        this.setState({gateways:data.data});
         };
 
     mapToViewModel=(gateway)=>{

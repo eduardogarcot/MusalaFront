@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6f6e38f2-6a10-481e-99f0-e6cbfd037587" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Forms/form.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Forms/form.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Services/http.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services/http.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/gatewayForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/gatewayForm.jsx" afterDir="false" />
@@ -35,58 +34,36 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Table/table.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="23" column="57" lean-forward="true" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/gatewayForm.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="32" column="29" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-                <element signature="n#!!block;n#componentDidMount#0;n#GatewayForm#0" />
-                <element signature="e#1197#1394#0" />
-                <element signature="e#1487#1684#0" />
-                <element signature="e#2002#2674#0" />
-                <element signature="n#!!block;n#render#0;n#GatewayForm#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/peripheralDevicesForm.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="89" column="80" lean-forward="true" selection-start-line="89" selection-start-column="20" selection-end-line="89" selection-end-column="80" />
+            <state relative-caret-position="294">
+              <caret line="141" column="20" selection-start-line="141" selection-start-column="20" selection-end-line="141" selection-end-column="20" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#409#838#0" />
                 <element signature="n#!!block;n#componentDidMount#0;n#PeripheralDevicesForm#0" />
+                <element signature="e#879#1098#0" />
+                <element signature="e#1128#1347#0" />
+                <element signature="e#1823#2502#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Forms/form.jsx">
+        <entry file="file://$PROJECT_DIR$/src/components/gatewayForm.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+            <state relative-caret-position="548">
+              <caret line="108" column="45" lean-forward="true" selection-start-line="92" selection-start-column="8" selection-end-line="108" selection-end-column="45" />
               <folding>
-                <element signature="e#0#41#0" expanded="true" />
-                <element signature="e#561#752#0" />
-                <element signature="e#777#934#0" />
-                <element signature="e#1924#2175#0" />
+                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#202#349#0" />
+                <element signature="e#364#765#0" />
+                <element signature="n#!!block;n#componentDidMount#0;n#GatewayForm#0" />
+                <element signature="e#1705#1895#0" />
+                <element signature="e#1931#2121#0" />
+                <element signature="n#!!block;n#render#0;n#GatewayForm#0" />
               </folding>
             </state>
           </provider>
@@ -95,10 +72,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/peripheraldevices.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="51" column="5" lean-forward="true" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
+            <state relative-caret-position="239">
+              <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
+                <element signature="n#!!block;n#componentDidMount#0;n#PeripheralDevices#0" />
+                <element signature="e#573#792#0" />
+                <element signature="e#590#791#0" />
               </folding>
             </state>
           </provider>
@@ -107,11 +87,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/gateways.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="33" column="9" lean-forward="true" selection-start-line="26" selection-start-column="8" selection-end-line="33" selection-end-column="9" />
+            <state relative-caret-position="456">
+              <caret line="19" column="44" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="19" selection-end-column="44" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
                 <element signature="e#542#739#0" />
+                <element signature="e#723#1216#0" />
+                <element signature="n#!!block;n#render#0;n#Gateways#0" />
               </folding>
             </state>
           </provider>
@@ -120,11 +102,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Services/http.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="8" column="29" lean-forward="true" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+            <state relative-caret-position="384">
+              <caret line="16" column="3" lean-forward="true" selection-start-line="5" selection-end-line="16" selection-end-column="3" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Forms/listBox.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="12" column="35" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -153,12 +144,12 @@
         <option value="$PROJECT_DIR$/src/components/table.jsx" />
         <option value="$PROJECT_DIR$/src/components/navbar.jsx" />
         <option value="$PROJECT_DIR$/src/App.js" />
-        <option value="$PROJECT_DIR$/src/components/peripheralDevicesForm.jsx" />
+        <option value="$PROJECT_DIR$/src/components/gateways.jsx" />
         <option value="$PROJECT_DIR$/src/components/Forms/form.jsx" />
+        <option value="$PROJECT_DIR$/src/components/gatewayForm.jsx" />
         <option value="$PROJECT_DIR$/src/components/peripheraldevices.jsx" />
         <option value="$PROJECT_DIR$/src/components/Services/http.jsx" />
-        <option value="$PROJECT_DIR$/src/components/gateways.jsx" />
-        <option value="$PROJECT_DIR$/src/components/gatewayForm.jsx" />
+        <option value="$PROJECT_DIR$/src/components/peripheralDevicesForm.jsx" />
       </list>
     </option>
   </component>
@@ -191,6 +182,13 @@
               <item name="managing_gateways" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="managing_gateways" type="b2602c69:ProjectViewProjectNode" />
+              <item name="managing_gateways" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Forms" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="managing_gateways" type="b2602c69:ProjectViewProjectNode" />
@@ -270,7 +268,7 @@
       <updated>1608701380031</updated>
       <workItem from="1608701383332" duration="9098000" />
       <workItem from="1609993801177" duration="68000" />
-      <workItem from="1610426079348" duration="81049000" />
+      <workItem from="1610426079348" duration="87272000" />
     </task>
     <task id="LOCAL-00001" summary="routes-created-with-basic-components">
       <created>1610430332147</created>
@@ -321,11 +319,18 @@
       <option name="project" value="LOCAL" />
       <updated>1610780008615</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="handling-errors-gateways-classes">
+      <created>1610945757152</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1610945757152</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90215000" />
+    <option name="totallyTimeSpent" value="96438000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -421,16 +426,23 @@
     <MESSAGE value="consuming-api-get-services" />
     <MESSAGE value="fetching-gateways-and-pds-by-id-and-charging-into-forms" />
     <MESSAGE value="put-post-peripheral-devices" />
-    <option name="LAST_COMMIT_MESSAGE" value="put-post-peripheral-devices" />
+    <MESSAGE value="handling-errors-gateways-classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="handling-errors-gateways-classes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/Forms/form.jsx</url>
-          <line>34</line>
+          <line>32</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/gatewayForm.jsx</url>
+          <line>6</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -501,28 +513,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Forms/listBox.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" column="27" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Forms/listGroup.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="647">
           <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-          <folding>
-            <element signature="n#!!block;n#scripts#0;n#!!top" />
-            <element signature="n#!!block;n#eslintConfig#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -532,6 +526,36 @@
           <caret line="24" column="25" lean-forward="true" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Forms/input.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://I:/Cursos/Code With Mosh - Mastering React/vidly-react-master/src/services/http.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="30" lean-forward="true" selection-end-line="30" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Forms/form.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#561#752#0" />
+            <element signature="e#777#934#0" />
+            <element signature="e#1924#2175#0" />
           </folding>
         </state>
       </provider>
@@ -546,89 +570,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Forms/input.jsx">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Forms/form.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+        <state relative-caret-position="202">
+          <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
-            <element signature="e#561#752#0" />
-            <element signature="e#777#934#0" />
-            <element signature="e#1924#2175#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/peripheralDevicesForm.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="89" column="80" lean-forward="true" selection-start-line="89" selection-start-column="20" selection-end-line="89" selection-end-column="80" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <element signature="n#!!block;n#componentDidMount#0;n#PeripheralDevicesForm#0" />
+            <element signature="n#!!block;n#scripts#0;n#!!top" />
+            <element signature="n#!!block;n#eslintConfig#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/peripheraldevices.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="51" column="5" lean-forward="true" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
+        <state relative-caret-position="239">
+          <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://I:/Cursos/Code With Mosh - Mastering React/vidly-react-master/src/services/http.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="30" lean-forward="true" selection-end-line="30" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="n#!!block;n#componentDidMount#0;n#PeripheralDevices#0" />
+            <element signature="e#573#792#0" />
+            <element signature="e#590#791#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Services/http.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="29" lean-forward="true" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+        <state relative-caret-position="384">
+          <caret line="16" column="3" lean-forward="true" selection-start-line="5" selection-end-line="16" selection-end-column="3" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/gateways.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="33" column="9" lean-forward="true" selection-start-line="26" selection-start-column="8" selection-end-line="33" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#542#739#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/gatewayForm.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="32" column="29" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
+        <state relative-caret-position="548">
+          <caret line="108" column="45" lean-forward="true" selection-start-line="92" selection-start-column="8" selection-end-line="108" selection-end-column="45" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#202#349#0" />
+            <element signature="e#364#765#0" />
             <element signature="n#!!block;n#componentDidMount#0;n#GatewayForm#0" />
-            <element signature="e#1197#1394#0" />
-            <element signature="e#1487#1684#0" />
-            <element signature="e#2002#2674#0" />
+            <element signature="e#1705#1895#0" />
+            <element signature="e#1931#2121#0" />
             <element signature="n#!!block;n#render#0;n#GatewayForm#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/gateways.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="19" column="44" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="19" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#542#739#0" />
+            <element signature="e#723#1216#0" />
+            <element signature="n#!!block;n#render#0;n#Gateways#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Forms/listBox.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="35" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/peripheralDevicesForm.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="141" column="20" selection-start-line="141" selection-start-column="20" selection-end-line="141" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#409#838#0" />
+            <element signature="n#!!block;n#componentDidMount#0;n#PeripheralDevicesForm#0" />
+            <element signature="e#879#1098#0" />
+            <element signature="e#1128#1347#0" />
+            <element signature="e#1823#2502#0" />
           </folding>
         </state>
       </provider>
