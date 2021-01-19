@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f6e38f2-6a10-481e-99f0-e6cbfd037587" name="Default Changelist" comment="extracting-endpoint-constante-peripheral-devices">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/gatewayForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/gatewayForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/gateways.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/gateways.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/peripheralDevicesForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/peripheralDevicesForm.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/peripheraldevices.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/peripheraldevices.jsx" afterDir="false" />
     </list>
@@ -33,56 +33,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/peripheraldevices.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-                <element signature="e#196#232#0" />
-                <element signature="n#!!block;n#componentDidMount#0;n#PeripheralDevices#0" />
-                <element signature="e#573#792#0" />
-                <element signature="e#590#791#0" />
-                <element signature="n#!!block;n#render#0;n#PeripheralDevices#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/peripheralDevicesForm.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="125" column="4" selection-start-line="125" selection-start-column="4" selection-end-line="125" selection-end-column="4" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-                <element signature="e#212#415#0" />
-                <element signature="e#409#838#0" />
-                <element signature="n#!!block;n#componentDidMount#0;n#PeripheralDevicesForm#0" />
-                <element signature="e#879#1098#0" />
-                <element signature="e#1128#1347#0" />
-                <element signature="e#2421#3784#0" />
-                <element signature="e#2300#2392#0" />
-                <element signature="e#2419#2722#0" />
-                <element signature="e#3812#4085#0" />
-                <element signature="n#!!block;n#render#0;n#PeripheralDevicesForm#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/gateways.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="65" column="24" lean-forward="true" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="24" />
+            <state relative-caret-position="485">
+              <caret line="45" column="167" lean-forward="true" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="167" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
                 <element signature="e#187#214#0" />
                 <element signature="n#!!block;n#componentDidMount#0;n#Gateways#0" />
                 <element signature="e#542#739#0" />
-                <element signature="e#757#1128#0" />
-                <element signature="n#!!block;n#render#0;n#Gateways#0" />
               </folding>
             </state>
           </provider>
@@ -129,6 +88,39 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/peripheraldevices.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="316">
+              <caret line="44" column="64" lean-forward="true" selection-start-line="44" selection-start-column="40" selection-end-line="44" selection-end-column="64" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+                <element signature="e#517#736#0" />
+                <element signature="e#814#1185#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/peripheralDevicesForm.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+                <element signature="n#PeripheralDevicesForm#0" />
+                <element signature="n#!!block;n#componentDidMount#0;n#PeripheralDevicesForm#0" />
+                <element signature="e#1925#2144#0" />
+                <element signature="e#2174#2393#0" />
+                <element signature="e#2421#3708#0" />
+                <element signature="e#3736#4009#0" />
+                <element signature="n#!!block;n#render#0;n#PeripheralDevicesForm#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
@@ -156,17 +148,17 @@
         <option value="$PROJECT_DIR$/src/components/Forms/form.jsx" />
         <option value="$PROJECT_DIR$/src/components/Services/http.jsx" />
         <option value="$PROJECT_DIR$/src/components/gatewayForm.jsx" />
-        <option value="$PROJECT_DIR$/src/components/peripheralDevicesForm.jsx" />
         <option value="$PROJECT_DIR$/src/components/gateways.jsx" />
         <option value="$PROJECT_DIR$/src/components/peripheraldevices.jsx" />
+        <option value="$PROJECT_DIR$/src/components/peripheralDevicesForm.jsx" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1048" />
+    <option name="x" value="662" />
+    <option name="y" value="91" />
+    <option name="width" value="1100" />
+    <option name="height" value="595" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -270,7 +262,7 @@
       <updated>1608701380031</updated>
       <workItem from="1608701383332" duration="9098000" />
       <workItem from="1609993801177" duration="68000" />
-      <workItem from="1610426079348" duration="90863000" />
+      <workItem from="1610426079348" duration="96748000" />
     </task>
     <task id="LOCAL-00001" summary="routes-created-with-basic-components">
       <created>1610430332147</created>
@@ -342,11 +334,18 @@
       <option name="project" value="LOCAL" />
       <updated>1610955125597</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="extracting-endpoint-constant-gateways">
+      <created>1610955744379</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1610955744379</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100029000" />
+    <option name="totallyTimeSpent" value="105914000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -361,20 +360,20 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2300066" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2300066" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Messages" weight="0.32941177" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.064705886" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.20441176" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.09558824" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32941177" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49966952" weight="0.20735294" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49966952" weight="0.9056604" />
       <window_info anchor="bottom" id="GraphQL" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50033045" side_tool="true" weight="0.20735294" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.43823528" />
@@ -445,7 +444,8 @@
     <MESSAGE value="handling-errors-gateways-classes" />
     <MESSAGE value="first-release" />
     <MESSAGE value="extracting-endpoint-constante-peripheral-devices" />
-    <option name="LAST_COMMIT_MESSAGE" value="extracting-endpoint-constante-peripheral-devices" />
+    <MESSAGE value="extracting-endpoint-constant-gateways" />
+    <option name="LAST_COMMIT_MESSAGE" value="extracting-endpoint-constant-gateways" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -610,26 +610,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/peripheralDevicesForm.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="125" column="4" selection-start-line="125" selection-start-column="4" selection-end-line="125" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#212#415#0" />
-            <element signature="e#409#838#0" />
-            <element signature="n#!!block;n#componentDidMount#0;n#PeripheralDevicesForm#0" />
-            <element signature="e#879#1098#0" />
-            <element signature="e#1128#1347#0" />
-            <element signature="e#2421#3784#0" />
-            <element signature="e#2300#2392#0" />
-            <element signature="e#2419#2722#0" />
-            <element signature="e#3812#4085#0" />
-            <element signature="n#!!block;n#render#0;n#PeripheralDevicesForm#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/gatewayForm.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -648,32 +628,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/peripheraldevices.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#196#232#0" />
-            <element signature="n#!!block;n#componentDidMount#0;n#PeripheralDevices#0" />
-            <element signature="e#573#792#0" />
-            <element signature="e#590#791#0" />
-            <element signature="n#!!block;n#render#0;n#PeripheralDevices#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/gateways.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="65" column="24" lean-forward="true" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="24" />
+        <state relative-caret-position="485">
+          <caret line="45" column="167" lean-forward="true" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="167" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
             <element signature="e#187#214#0" />
             <element signature="n#!!block;n#componentDidMount#0;n#Gateways#0" />
             <element signature="e#542#739#0" />
-            <element signature="e#757#1128#0" />
-            <element signature="n#!!block;n#render#0;n#Gateways#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/peripheraldevices.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="44" column="64" lean-forward="true" selection-start-line="44" selection-start-column="40" selection-end-line="44" selection-end-column="64" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#517#736#0" />
+            <element signature="e#814#1185#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/peripheralDevicesForm.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="n#PeripheralDevicesForm#0" />
+            <element signature="n#!!block;n#componentDidMount#0;n#PeripheralDevicesForm#0" />
+            <element signature="e#1925#2144#0" />
+            <element signature="e#2174#2393#0" />
+            <element signature="e#2421#3708#0" />
+            <element signature="e#3736#4009#0" />
+            <element signature="n#!!block;n#render#0;n#PeripheralDevicesForm#0" />
           </folding>
         </state>
       </provider>

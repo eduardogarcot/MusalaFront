@@ -3,6 +3,8 @@ import Joi from "joi-browser";
 import Form from "./Forms/form";
 import axios from "axios";
 import {toast} from "react-toastify";
+import * as myConstants from "./Services/http";
+
 
 class GatewayForm extends Form {
     state = {
@@ -38,7 +40,7 @@ class GatewayForm extends Form {
             this.setState({data: tempGateway});
             return;
         }
-        const endpoint = "https://localhost:5001/api/gateways/"+gatewayID.toString();
+        let endpoint = myConstants.ENDPOINTS +"gateways/"+gatewayID.toString();
         let data = {};
         try {
             data = await axios.get(endpoint)
@@ -49,7 +51,6 @@ class GatewayForm extends Form {
                 this.props.history.push("/gateways");
                 return;
             }
-            toast.error("Unexpected Error");
             this.props.history.push("/gateways");
             return;
         }
@@ -75,23 +76,22 @@ class GatewayForm extends Form {
     doSubmit = async ()=>{
         const {id}=this.props.match.params;
         const data =this.mapToGatewayModel(this.state.data);
+        let endpoint = myConstants.ENDPOINTS +"gateways";
         if (id==="new"){
             try {
-                await axios.post("https://localhost:5001/api/gateways",data)
+                await axios.post(endpoint,data)
             }
             catch (error) {
                 if (error.response && error.response.status === 400) {
                     toast.error("Error: Invalid IP Address, or this gateways has already exist");
                     return;
                 }
-                toast.error("Unexpected Error");
-                return;
             }
             this.props.history.push("/");
             return;
         }
         try{
-            await axios.put(`https://localhost:5001/api/gateways/${id}`,data)
+            await axios.put(`${endpoint}/${id}`,data)
         }
         catch(error){
             if (error.response && error.response.status === 400) {
@@ -103,8 +103,6 @@ class GatewayForm extends Form {
                 this.props.history.push("/gateways");
                 return;
             }
-            toast.error("Unexpected Error");
-            this.props.history.push("/gateways");
         }
         this.props.history.push("/gateways");
     };

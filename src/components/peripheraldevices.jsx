@@ -3,6 +3,7 @@ import Table from "./Table/table";
 import {Link} from "react-router-dom";
 import axios from "axios";
 import * as myConstants from "./Services/http";
+import {toast} from "react-toastify";
 
 class PeripheralDevices extends Component {
     state={
@@ -24,16 +25,30 @@ class PeripheralDevices extends Component {
             serialNumberId:pd.serialNumberId
         }};
 
+    handleDelete = async (id) => {
+        let endpoint = myConstants.ENDPOINTS +"peripheraldevices";
+        try {
+            await axios.delete(`${endpoint}/${id}`,id)
+        }
+        catch (error) {
+            if (error.response && error.response.status === 404) {
+                toast.error("This peripheral device has already been deleted");
+            }
+        }
+        this.props.history.push("/peripheraldevices");
+    };
+
     render() {
         let labels=[
             {path: "_id", label:"Device Id", content:pd=><Link to={`/peripheraldevices/${pd._id}`}>{pd._id}</Link>},
             {path:"vendor", label:"Vendor"},
-            {path:"createdDate", label:"Created Date"},
+            {path:"createdDate", label:"Created Date(YYYY/MM/DD)"},
             {path:"onlineStatus", label:"Is Online", content:gateway=>{
                 if (gateway.onlineStatus) return <p>Yes</p>;
                     return <p>No</p>
                 }},
-            {path:"serialNumberId", label:"Gateway ID"}
+            {path:"serialNumberId", label:"Gateway ID"},
+            {path:"delete", label:"Delete", content:(peripheralDevice)=> <button className="btn btn-sm btn-danger" onClick={()=>this.handleDelete(peripheralDevice._id)}>Delete</button>}
         ];
         let peripheralDevicesList= this.state.peripheralDevices.map(pd=>this.mapToViewModel(pd));
         if (peripheralDevicesList.length===0)
