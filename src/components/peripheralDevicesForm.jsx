@@ -131,9 +131,9 @@ class PeripheralDevicesForm extends Form {
                 <form>
                     {idPD === "new" && this.renderInput("_id", "Device Id", "number")}
                     {this.renderInput("vendor", "Vendor")}
-                    {this.renderInput("createdDate", "Created Date(YYYY/MM/DD)", "date")}
                     {this.renderListBox("onlineStatus", "is Online", [{_id:1, value:true, label:"Yes"}, {_id:2, value:false, label:"No"}])}
                     {this.renderListBox("serialNumberId", "Gateway ID", this.getGatewaysID())}
+                    {this.renderInput("createdDate", "Created Date", "date")}
                     {this.renderButton('Save')}
                 </form>
             </div>

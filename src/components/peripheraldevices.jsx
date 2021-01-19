@@ -36,7 +36,6 @@ class PeripheralDevices extends Component {
             }
         }
         window.location.reload(false);
-
     };
 
     render() {
