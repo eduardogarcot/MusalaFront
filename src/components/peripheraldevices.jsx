@@ -35,7 +35,8 @@ class PeripheralDevices extends Component {
                 toast.error("This peripheral device has already been deleted");
             }
         }
-        this.props.history.push("/peripheraldevices");
+        window.location.reload(false);
+
     };
 
     render() {
